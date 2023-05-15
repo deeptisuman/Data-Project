@@ -58,7 +58,7 @@ function App() {
         </div>
       )}
       {histogramData.length > 0 && (
-        <div className="p-4 bg-yellow-200">
+        <div className="p-4 bg-[#eddcd2]">
           <ResponsiveContainer width="100%" height={400}>
             <BarChart data={histogramData}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -66,12 +66,12 @@ function App() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="count" fill="#8884d8" />
+              <Bar dataKey="count" fill="#414535" />
             </BarChart>
           </ResponsiveContainer>
           <div  className="center flex justify-center py-4">
-            <button className="bg-zinc-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded mr-2" onClick={downloadCSV}>Export</button>
-            <button className="bg-zinc-800 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded" onClick={handleBack}>Back</button>
+            <button className="bg-[#c19875] hover:bg-[#618985] text-white font-bold py-2 px-4 rounded mr-2" onClick={downloadCSV}>Export</button>
+            <button className="bg-[#a5a58d] hover:bg-[#96bbbb] text-white font-bold py-2 px-4 rounded" onClick={handleBack}>Back</button>
           </div>
         </div>
       )}
